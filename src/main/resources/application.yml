@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: study
+
+server:
+  port: 8080
+
+management:
+  endpoint:
+    health:
+      show-details: never
+      probes:
+        enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health
