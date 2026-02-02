@@ -2,6 +2,18 @@ spring:
   application:
     name: study
 
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2
+      s3:
+        bucket: team-profile-images-banhklo2
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
 server:
   port: 8080
 
@@ -14,4 +26,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: health
+        include: health, info

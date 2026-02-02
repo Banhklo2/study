@@ -11,19 +11,30 @@ spring:
         static: ap-northeast-2
       credentials:
         instance-profile: true
+      s3:
+        bucket: team-profile-images-banhklo2
 
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:mysql://my-database.cba2immmcc2m.ap-northeast-2.rds.amazonaws.com:3306/test
+    username: admin
+    password: 12345678
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
 
 server:
   port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+  info:
+    env:
+      enabled: true

@@ -24,4 +24,14 @@ public class Member {
         this.age = age;
         this.mbti = mbti;
     }
+
+    private String profileImageKey;
+
+    public void updateProfileImageKey(String key) {
+        this.profileImageKey = key;
+    }
+
+    public String getProfileImageKey() {
+        return profileImageKey;
+    }
 }
