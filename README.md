@@ -3,3 +3,8 @@
 
 # EC2 배포 완료
 - 3.38.210.31
+
+# DB 분리 및 보안 연결 완료
+- http://3.38.210.31:8080/actuator/info
+<img width="2557" height="1218" alt="image" src="https://github.com/user-attachments/assets/6fa7fe5e-a208-4968-8c63-a83ede25aa5e" />
+
