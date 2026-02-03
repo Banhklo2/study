@@ -24,7 +24,11 @@ spring:
         enabled: false
       secretsmanager:
         enabled: false
-      s3:
-        enabled: false
+
       region:
         auto: false
+        static: ap-northeast-2
+
+      s3:
+        enabled: true
+        bucket: "test-profile-images-banhklo2"

@@ -12,7 +12,7 @@ spring:
       credentials:
         instance-profile: true
       s3:
-        bucket: team-profile-images-banhklo2
+        bucket: "test-profile-images-banhklo2"
 
   datasource:
     url: jdbc:mysql://my-database.cba2immmcc2m.ap-northeast-2.rds.amazonaws.com:3306/test
