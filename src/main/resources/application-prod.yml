@@ -15,9 +15,9 @@ spring:
         bucket: "test-profile-images-banhklo2"
 
   datasource:
-    url: jdbc:mysql://my-database.cba2immmcc2m.ap-northeast-2.rds.amazonaws.com:3306/test
-    username: admin
-    password: 12345678
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
